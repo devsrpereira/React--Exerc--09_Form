@@ -1,0 +1,86 @@
+@charset "UTM-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fontInter: 'Inter';
+    --fontPoppins: 'Poppins';
+    --fontNoto: 'Noto Sans';
+}
+
+
+body, html{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+.form_text > input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #808080ad;
+}
+.form_txtarea{
+    border-radius: 10px;
+    border: 1px solid #808080ad;
+    margin-bottom: 20px;
+}
+.form_ckbox{
+    font-family: var(--fontInter);
+    font-size: 20px;
+    margin: 0 0 20px 10px;
+}
+.form_field{
+    border: 1px dashed #808080ad;
+    padding: 15px;
+    font-family: var(--fontNoto);
+    line-height: 2em;
+}
+.form_field > label{
+    margin-left:10px ;
+}
+.label_color{
+    font-family: var(--fontNoto);
+    line-height: 2em;
+}
+.fav_color{
+    font-family: var(--fontNoto);
+    font-size: 16px;
+    background-color: rgba(118, 118, 118, 0.145);
+    margin-bottom: 25px;
+}
+.form_button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 20px;
+    
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    font-family: var(--fontNoto);
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.186);
+}
+.form_button:hover{
+    background-color: #5555551f ;
+}
